@@ -7,7 +7,7 @@
 
 /* sets background of website to a light green */
 body {
-    background-color:#dff3e3;
+background-color:#dff3e3;
 }
 
 /* creates an orange header */
@@ -27,3 +27,7 @@ h1 {
 /* classes */
 
 /* ids */
+
+#flexboxcontainer {
+    display: flex;
+}
