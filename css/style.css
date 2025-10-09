@@ -1,0 +1,29 @@
+/* native HTML */
+
+/* sets default margin to 0 to make positioning easier */
+* {
+    margin:0;
+}
+
+/* sets background of website to a light green */
+body {
+    background-color:#dff3e3;
+}
+
+/* creates an orange header */
+header {
+    background-color: #ffd1ba;
+    width: 100vw;
+    text-align: center;
+}
+
+/* sets the header text to always take up 5% of the total view width*/
+h1 {
+    font-size: 4vw;
+    padding-top: 0.5vw;
+    padding-bottom :0.5vw;
+}
+
+/* classes */
+
+/* ids */
