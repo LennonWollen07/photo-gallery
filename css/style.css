@@ -1,8 +1,10 @@
 /* native HTML */
 
 /* sets default margin to 0 to make positioning easier */
+/* also sets font to Lucida Sans */
 * {
     margin:0;
+    font-family:'Lucida Sans';
 }
 
 /* sets background of website to a light green */
@@ -14,6 +16,7 @@ background-color:#dff3e3;
 header {
     background-color: #ffd1ba;
     width: 100vw;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -24,10 +27,53 @@ h1 {
     padding-bottom :0.5vw;
 }
 
+/* sets the image size within the cards */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: #ce7da5 solid 2px;
+    border-radius: 10%;
+}
+
 /* classes */
+
+/* creates a card that can contain an image and textbox */
+.container__card {
+    height : 250px;
+    width : 250px;
+    background-color: #bee5bf;
+    border: #ce7da5 solid 2px;
+    border-radius: 10%;
+}
+
+/* creates a container for where the image in each card will go */
+.container__card__imagecontainer {
+    height: 130px;
+    width: 230px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* creates a container that contains where the text will be entered */
+.container__card__textbox {
+    height: 80px;
+    width: 230px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-wrap: inherit;
+    font-size: 12px;
+}
 
 /* ids */
 
-#flexboxcontainer {
+/* this container contains all the cards in the photo gallery */
+#container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height : 100vh;
+    width: 100vw;
+    min-width: 300px;
 }
