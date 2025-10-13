@@ -16,7 +16,7 @@ background-color:#dff3e3;
 header {
     background-color: #ffd1ba;
     width: 100vw;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: center;
 }
 
@@ -42,6 +42,7 @@ img {
 .container__card {
     height : 250px;
     width : 250px;
+    margin: 5px;
     background-color: #bee5bf;
     border: #ce7da5 solid 2px;
     border-radius: 10%;
@@ -61,6 +62,7 @@ img {
     width: 230px;
     margin-top: 10px;
     margin-left: 10px;
+    text-align: center;
     text-wrap: inherit;
     font-size: 12px;
 }
