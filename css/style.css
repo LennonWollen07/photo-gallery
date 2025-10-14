@@ -40,8 +40,8 @@ img {
 
 /* creates a card that can contain an image and textbox */
 .container__card {
-    height : 250px;
-    width : 250px;
+    height : 96vw;
+    width : 96vw;
     margin: 5px;
     background-color: #bee5bf;
     border: #ce7da5 solid 2px;
@@ -50,21 +50,21 @@ img {
 
 /* creates a container for where the image in each card will go */
 .container__card__imagecontainer {
-    height: 130px;
-    width: 230px;
+    height: 60%;
+    width: 95%;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 2.5%;
 }
 
 /* creates a container that contains where the text will be entered */
 .container__card__textbox {
-    height: 80px;
-    width: 230px;
+    height: 40%;
+    width: 95%;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 2.5%;
     text-align: center;
     text-wrap: inherit;
-    font-size: 12px;
+    font-size: 4vw;
 }
 
 /* ids */
