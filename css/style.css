@@ -20,7 +20,7 @@ header {
     text-align: center;
 }
 
-/* sets the header text to always take up 5% of the total view width*/
+/* sets the header text to take up about 4% of the total view height*/
 h1 {
     font-size: 4vw;
     padding-top: 0.5vw;
@@ -38,33 +38,140 @@ img {
 
 /* classes */
 
+/* media 1200px width or more */
+
 /* creates a card that can contain an image and textbox */
-.container__card {
-    height : 96vw;
-    width : 96vw;
-    margin: 5px;
-    background-color: #bee5bf;
-    border: #ce7da5 solid 2px;
-    border-radius: 10%;
+    .container__card {
+        height : 22.5vw;
+        width : 22.5vw;
+        margin: 5px;
+        background-color: #bee5bf;
+        border: #ce7da5 solid 2px;
+        border-radius: 10%;
+    }
+
+    /* creates a container for where the image in each card will go */
+    .container__card__imagecontainer {
+        height: 60%;
+        width: 94%;
+        margin-top: 10px;
+        margin-left: 2.5%;
+    }
+
+    /* creates a container that contains where the text will be entered */
+    .container__card__textbox {
+        height: 40%;
+        width: 95%;
+        margin-top: 10px;
+        margin-left: 2.5%;
+        text-align: center;
+        text-wrap: inherit;
+        font-size: 1vw;
+    }
+
+/* media 1200px width or less */
+
+@media screen and (max-width: 1200px) {
+
+    /* creates a card that can contain an image and textbox */
+    .container__card {
+        height : 30vw;
+        width : 30vw;
+        margin: 5px;
+        background-color: #bee5bf;
+        border: #ce7da5 solid 2px;
+        border-radius: 10%;
+    }
+
+    /* creates a container for where the image in each card will go */
+    .container__card__imagecontainer {
+        height: 60%;
+        width: 94%;
+        margin-top: 10px;
+        margin-left: 2.5%;
+    }
+
+    /* creates a container that contains where the text will be entered */
+    .container__card__textbox {
+        height: 40%;
+        width: 95%;
+        margin-top: 10px;
+        margin-left: 2.5%;
+        text-align: center;
+        text-wrap: inherit;
+        font-size: 1.3vw;
+    }
+
 }
 
-/* creates a container for where the image in each card will go */
-.container__card__imagecontainer {
-    height: 60%;
-    width: 95%;
-    margin-top: 10px;
-    margin-left: 2.5%;
+/* media 900px width or less */
+
+@media screen and (max-width: 900px) {
+
+    /* creates a card that can contain an image and textbox */
+    .container__card {
+        height : 45vw;
+        width : 45vw;
+        margin: 5px;
+        background-color: #bee5bf;
+        border: #ce7da5 solid 2px;
+        border-radius: 10%;
+    }
+
+    /* creates a container for where the image in each card will go */
+    .container__card__imagecontainer {
+        height: 60%;
+        width: 94%;
+        margin-top: 10px;
+        margin-left: 2.5%;
+    }
+
+    /* creates a container that contains where the text will be entered */
+    .container__card__textbox {
+        height: 40%;
+        width: 95%;
+        margin-top: 10px;
+        margin-left: 2.5%;
+        text-align: center;
+        text-wrap: inherit;
+        font-size: 2vw;
+    }
+
 }
 
-/* creates a container that contains where the text will be entered */
-.container__card__textbox {
-    height: 40%;
-    width: 95%;
-    margin-top: 10px;
-    margin-left: 2.5%;
-    text-align: center;
-    text-wrap: inherit;
-    font-size: 4vw;
+/* media 600px width or less */
+
+@media screen and (max-width: 600px) {
+
+    /* creates a card that can contain an image and textbox */
+    .container__card {
+        height : 90vw;
+        width : 90vw;
+        margin: 5px;
+        background-color: #bee5bf;
+        border: #ce7da5 solid 2px;
+        border-radius: 10%;
+    }
+
+    /* creates a container for where the image in each card will go */
+    .container__card__imagecontainer {
+        height: 60%;
+        width: 95%;
+        margin-top: 10px;
+        margin-left: 2.5%;
+    }
+
+    /* creates a container that contains where the text will be entered */
+    .container__card__textbox {
+        height: 40%;
+        width: 95%;
+        margin-top: 10px;
+        margin-left: 2.5%;
+        text-align: center;
+        text-wrap: inherit;
+        font-size: 4vw;
+    }
+
 }
 
 /* ids */
@@ -75,7 +182,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
     height : 100vh;
     width: 100vw;
-    min-width: 300px;
 }
