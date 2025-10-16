@@ -36,143 +36,99 @@ img {
     border-radius: 10%;
 }
 
-/* classes */
+/* ------------------------------------------- */
+
+/* classes not tied to view width*/
+
+.container__card--design {
+    margin: 5px;
+    background-color: #bee5bf;
+    border: #ce7da5 solid 2px;
+    border-radius: 10%;
+}
+
+/* creates a container for where the image in each card will go */
+.container__card__imagecontainer {
+    height: 60%;
+    width: 94%;
+    margin-top: 10px;
+    margin-left: 2.5%;
+}
+
+.container__card__textbox {
+    height: 40%;
+    width: 95%;
+    margin-top: 10px;
+    margin-left: 2.5%;
+    text-align: center;
+    text-wrap: inherit;
+}
+
+/* ------------------------------------------- */
+
+/* classes tied to view width */
 
 /* media 1200px width or more */
+/* sets the size of the card which contains the image and textbox */
+.container__card {
+    height : 22.5vw;
+    width : 22.5vw;
+}
 
-/* creates a card that can contain an image and textbox */
-    .container__card {
-        height : 22.5vw;
-        width : 22.5vw;
-        margin: 5px;
-        background-color: #bee5bf;
-        border: #ce7da5 solid 2px;
-        border-radius: 10%;
-    }
-
-    /* creates a container for where the image in each card will go */
-    .container__card__imagecontainer {
-        height: 60%;
-        width: 94%;
-        margin-top: 10px;
-        margin-left: 2.5%;
-    }
-
-    /* creates a container that contains where the text will be entered */
-    .container__card__textbox {
-        height: 40%;
-        width: 95%;
-        margin-top: 10px;
-        margin-left: 2.5%;
-        text-align: center;
-        text-wrap: inherit;
-        font-size: 1vw;
-    }
+/* creates a container that contains where the text will be entered */
+.container__card__textbox--textsize {
+    font-size: 1vw;
+}
 
 /* media 1200px width or less */
-
 @media screen and (max-width: 1200px) {
 
-    /* creates a card that can contain an image and textbox */
+    /* sets the size of the card which contains the image and textbox */
     .container__card {
         height : 30vw;
         width : 30vw;
-        margin: 5px;
-        background-color: #bee5bf;
-        border: #ce7da5 solid 2px;
-        border-radius: 10%;
-    }
-
-    /* creates a container for where the image in each card will go */
-    .container__card__imagecontainer {
-        height: 60%;
-        width: 94%;
-        margin-top: 10px;
-        margin-left: 2.5%;
     }
 
     /* creates a container that contains where the text will be entered */
-    .container__card__textbox {
-        height: 40%;
-        width: 95%;
-        margin-top: 10px;
-        margin-left: 2.5%;
-        text-align: center;
-        text-wrap: inherit;
+    .container__card__textbox--textsize {
         font-size: 1.3vw;
     }
 
 }
 
 /* media 900px width or less */
-
 @media screen and (max-width: 900px) {
 
-    /* creates a card that can contain an image and textbox */
+    /* sets the size of the card which contains the image and textbox */
     .container__card {
         height : 45vw;
         width : 45vw;
-        margin: 5px;
-        background-color: #bee5bf;
-        border: #ce7da5 solid 2px;
-        border-radius: 10%;
-    }
-
-    /* creates a container for where the image in each card will go */
-    .container__card__imagecontainer {
-        height: 60%;
-        width: 94%;
-        margin-top: 10px;
-        margin-left: 2.5%;
     }
 
     /* creates a container that contains where the text will be entered */
-    .container__card__textbox {
-        height: 40%;
-        width: 95%;
-        margin-top: 10px;
-        margin-left: 2.5%;
-        text-align: center;
-        text-wrap: inherit;
+    .container__card__textbox--textsize {
         font-size: 2vw;
     }
 
 }
 
 /* media 600px width or less */
-
 @media screen and (max-width: 600px) {
 
-    /* creates a card that can contain an image and textbox */
+    /* sets the size of the card which contains the image and textbox */
     .container__card {
         height : 90vw;
         width : 90vw;
-        margin: 5px;
-        background-color: #bee5bf;
-        border: #ce7da5 solid 2px;
-        border-radius: 10%;
-    }
-
-    /* creates a container for where the image in each card will go */
-    .container__card__imagecontainer {
-        height: 60%;
-        width: 95%;
-        margin-top: 10px;
-        margin-left: 2.5%;
     }
 
     /* creates a container that contains where the text will be entered */
-    .container__card__textbox {
-        height: 40%;
-        width: 95%;
-        margin-top: 10px;
-        margin-left: 2.5%;
-        text-align: center;
-        text-wrap: inherit;
+    .container__card__textbox--textsize {
         font-size: 4vw;
     }
 
 }
+
+/* ------------------------------------------- */
 
 /* ids */
 
